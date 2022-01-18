@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "6.3.0"
+    id 'org.springframework.boot' version '2.6.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group = 'com.weierstrass54.tutorial-test-api'
+version = '1.0.0'
+
+targetCompatibility = JavaVersion.VERSION_15
+sourceCompatibility = JavaVersion.VERSION_15
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'ch.qos.logback:logback-classic:1.2.10',
+            'org.springframework.boot:spring-boot-starter-web'
+}
